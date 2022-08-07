@@ -1,0 +1,21 @@
+<div class="card">
+
+  <div class="card-header">Filtros</div>
+
+  <div class="card-body">
+    <form>
+      <div class="form-group">
+        <label for="de">De</label>
+        <input type="number" id="de" class="form-control" #min>
+      </div>
+
+      <div class="form-group">
+        <label for="ate">Até</label>
+        <input type="number" id="ate" class="form-control" #max>
+      </div>
+
+      <button class="btn btn-primary btn-block btn-sm mt-2" (click)="filtrarPreco(+min.value, +max.value); $event.preventDefault()">Filtrar</button>
+    </form>
+  </div>
+
+</div>
